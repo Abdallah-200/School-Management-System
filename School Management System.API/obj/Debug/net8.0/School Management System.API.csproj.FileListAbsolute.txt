@@ -15,8 +15,10 @@ E:\project\School Management System\School Management System.API\bin\Debug\net8.
 E:\project\School Management System\School Management System.API\bin\Debug\net8.0\FluentValidation.dll
 E:\project\School Management System\School Management System.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Humanizer.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
 E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -147,6 +149,7 @@ E:\project\School Management System\School Management System.API\obj\Debug\net8.
 E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.csproj.CoreCompileInputs.cache
 E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.MvcApplicationPartsAssemblyInfo.cs
 E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.MvcApplicationPartsAssemblyInfo.cache
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.sourcelink.json
 E:\project\School Management System\School Management System.API\obj\Debug\net8.0\rjimswa.dswa.cache.json
 E:\project\School Management System\School Management System.API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 E:\project\School Management System\School Management System.API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -162,5 +165,3 @@ E:\project\School Management System\School Management System.API\obj\Debug\net8.
 E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.pdb
 E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.genruntimeconfig.cache
 E:\project\School Management System\School Management System.API\obj\Debug\net8.0\ref\School Management System.API.dll
-E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

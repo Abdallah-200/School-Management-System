@@ -9,6 +9,7 @@ E:\project\School Management System\School Management System.Application\obj\Deb
 E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School Management System.Application.AssemblyInfoInputs.cache
 E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School Management System.Application.AssemblyInfo.cs
 E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School Management System.Application.csproj.CoreCompileInputs.cache
+E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School Management System.Application.sourcelink.json
 E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School M.C38865D6.Up2Date
 E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School Management System.Application.dll
 E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\refint\School Management System.Application.dll

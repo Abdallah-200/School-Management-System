@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\project\\School Management System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5EDC26FF-1FCF-448F-8B6C-86DE16A8917C}|School Management System.API\\School Management System.API.csproj|e:\\project\\school management system\\school management system.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDC26FF-1FCF-448F-8B6C-86DE16A8917C}|School Management System.API\\School Management System.API.csproj|solutionrelative:school management system.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F0B2FC49-E0D0-42C0-A69A-C092B972A10D}|School Management System.Application\\School Management System.Application.csproj|e:\\project\\school management system\\school management system.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0B2FC49-E0D0-42C0-A69A-C092B972A10D}|School Management System.Application\\School Management System.Application.csproj|solutionrelative:school management system.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +54,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\project\\School Management System\\School Management System.API\\Program.cs",
+              "RelativeDocumentMoniker": "School Management System.API\\Program.cs",
+              "ToolTip": "E:\\project\\School Management System\\School Management System.API\\Program.cs",
+              "RelativeToolTip": "School Management System.API\\Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T09:22:13.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "JwtService.cs",
               "DocumentMoniker": "E:\\project\\School Management System\\School Management System.Application\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "School Management System.Application\\Services\\JwtService.cs",
@@ -62,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthService.cs",
               "DocumentMoniker": "E:\\project\\School Management System\\School Management System.Application\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "School Management System.Application\\Services\\AuthService.cs",
@@ -75,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "E:\\project\\School Management System\\School Management System.Application\\Interfaces\\IAuthService.cs",
               "RelativeDocumentMoniker": "School Management System.Application\\Interfaces\\IAuthService.cs",
@@ -87,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IJwtService.cs",
               "DocumentMoniker": "E:\\project\\School Management System\\School Management System.Application\\Interfaces\\IJwtService.cs",
               "RelativeDocumentMoniker": "School Management System.Application\\Interfaces\\IJwtService.cs",
@@ -99,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AuthResultDTO.cs",
               "DocumentMoniker": "E:\\project\\School Management System\\School Management System.Application\\DTOs\\Auth\\AuthResultDTO.cs",
               "RelativeDocumentMoniker": "School Management System.Application\\DTOs\\Auth\\AuthResultDTO.cs",
@@ -111,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "E:\\project\\School Management System\\School Management System.Application\\DTOs\\Auth\\LoginDTO.cs",
               "RelativeDocumentMoniker": "School Management System.Application\\DTOs\\Auth\\LoginDTO.cs",
@@ -123,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "RegisterDTO.cs",
               "DocumentMoniker": "E:\\project\\School Management System\\School Management System.Application\\DTOs\\Auth\\RegisterDTO.cs",
               "RelativeDocumentMoniker": "School Management System.Application\\DTOs\\Auth\\RegisterDTO.cs",
@@ -135,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AuthController.cs",
               "DocumentMoniker": "E:\\project\\School Management System\\School Management System.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "School Management System.API\\Controllers\\AuthController.cs",
