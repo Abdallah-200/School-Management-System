@@ -1,0 +1,19 @@
+E:\project\School Management System\School Management System.Infrastructure\bin\Debug\net8.0\School Management System.Infrastructure.deps.json
+E:\project\School Management System\School Management System.Infrastructure\bin\Debug\net8.0\School Management System.Infrastructure.runtimeconfig.json
+E:\project\School Management System\School Management System.Infrastructure\bin\Debug\net8.0\School Management System.Infrastructure.dll
+E:\project\School Management System\School Management System.Infrastructure\bin\Debug\net8.0\School Management System.Infrastructure.pdb
+E:\project\School Management System\School Management System.Infrastructure\bin\Debug\net8.0\School Management System.Application.dll
+E:\project\School Management System\School Management System.Infrastructure\bin\Debug\net8.0\School Management System.Domain.dll
+E:\project\School Management System\School Management System.Infrastructure\bin\Debug\net8.0\School Management System.Application.pdb
+E:\project\School Management System\School Management System.Infrastructure\bin\Debug\net8.0\School Management System.Domain.pdb
+E:\project\School Management System\School Management System.Infrastructure\obj\Debug\net8.0\School Management System.Infrastructure.csproj.AssemblyReference.cache
+E:\project\School Management System\School Management System.Infrastructure\obj\Debug\net8.0\School Management System.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\project\School Management System\School Management System.Infrastructure\obj\Debug\net8.0\School Management System.Infrastructure.AssemblyInfoInputs.cache
+E:\project\School Management System\School Management System.Infrastructure\obj\Debug\net8.0\School Management System.Infrastructure.AssemblyInfo.cs
+E:\project\School Management System\School Management System.Infrastructure\obj\Debug\net8.0\School Management System.Infrastructure.csproj.CoreCompileInputs.cache
+E:\project\School Management System\School Management System.Infrastructure\obj\Debug\net8.0\School M.484D27FB.Up2Date
+E:\project\School Management System\School Management System.Infrastructure\obj\Debug\net8.0\School Management System.Infrastructure.dll
+E:\project\School Management System\School Management System.Infrastructure\obj\Debug\net8.0\refint\School Management System.Infrastructure.dll
+E:\project\School Management System\School Management System.Infrastructure\obj\Debug\net8.0\School Management System.Infrastructure.pdb
+E:\project\School Management System\School Management System.Infrastructure\obj\Debug\net8.0\School Management System.Infrastructure.genruntimeconfig.cache
+E:\project\School Management System\School Management System.Infrastructure\obj\Debug\net8.0\ref\School Management System.Infrastructure.dll

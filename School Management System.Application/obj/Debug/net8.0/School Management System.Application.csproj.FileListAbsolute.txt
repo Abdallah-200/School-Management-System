@@ -1,0 +1,17 @@
+E:\project\School Management System\School Management System.Application\bin\Debug\net8.0\School Management System.Application.deps.json
+E:\project\School Management System\School Management System.Application\bin\Debug\net8.0\School Management System.Application.runtimeconfig.json
+E:\project\School Management System\School Management System.Application\bin\Debug\net8.0\School Management System.Application.dll
+E:\project\School Management System\School Management System.Application\bin\Debug\net8.0\School Management System.Application.pdb
+E:\project\School Management System\School Management System.Application\bin\Debug\net8.0\School Management System.Domain.dll
+E:\project\School Management System\School Management System.Application\bin\Debug\net8.0\School Management System.Domain.pdb
+E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School Management System.Application.csproj.AssemblyReference.cache
+E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School Management System.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School Management System.Application.AssemblyInfoInputs.cache
+E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School Management System.Application.AssemblyInfo.cs
+E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School Management System.Application.csproj.CoreCompileInputs.cache
+E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School M.C38865D6.Up2Date
+E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School Management System.Application.dll
+E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\refint\School Management System.Application.dll
+E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School Management System.Application.pdb
+E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\School Management System.Application.genruntimeconfig.cache
+E:\project\School Management System\School Management System.Application\obj\Debug\net8.0\ref\School Management System.Application.dll

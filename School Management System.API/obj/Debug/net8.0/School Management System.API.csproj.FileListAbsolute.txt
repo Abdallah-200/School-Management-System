@@ -1,0 +1,166 @@
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\appsettings.Development.json
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\appsettings.json
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\School Management System.API.staticwebassets.runtime.json
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\School Management System.API.staticwebassets.endpoints.json
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\School Management System.API.exe
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\School Management System.API.deps.json
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\School Management System.API.runtimeconfig.json
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\School Management System.API.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\School Management System.API.pdb
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\AutoMapper.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Azure.Core.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Azure.Identity.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\FluentValidation.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Humanizer.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.ClientModel.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.CodeDom.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.Memory.Data.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.Runtime.Caching.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\School Management System.Application.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\School Management System.Domain.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\School Management System.Infrastructure.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\School Management System.Application.pdb
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\School Management System.Infrastructure.pdb
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\School Management System.Domain.pdb
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.csproj.AssemblyReference.cache
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\rpswa.dswa.cache.json
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.GeneratedMSBuildEditorConfig.editorconfig
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.AssemblyInfoInputs.cache
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.AssemblyInfo.cs
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.csproj.CoreCompileInputs.cache
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.MvcApplicationPartsAssemblyInfo.cs
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.MvcApplicationPartsAssemblyInfo.cache
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\rjimswa.dswa.cache.json
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\scopedcss\bundle\School Management System.API.styles.css
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\staticwebassets.build.json
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\staticwebassets.build.json.cache
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\staticwebassets.development.json
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School M.D4F59DD2.Up2Date
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.dll
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\refint\School Management System.API.dll
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.pdb
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\School Management System.API.genruntimeconfig.cache
+E:\project\School Management System\School Management System.API\obj\Debug\net8.0\ref\School Management System.API.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\project\School Management System\School Management System.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
