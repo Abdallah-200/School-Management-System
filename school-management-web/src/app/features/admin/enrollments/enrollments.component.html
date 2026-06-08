@@ -1,0 +1,74 @@
+<div class="page-header">
+  <h2>{{ 'admin.enrollments.title' | translate }}</h2>
+  <p>{{ 'admin.enrollments.subtitle' | translate }}</p>
+</div>
+
+@if (error()) {
+  <div class="alert alert-error">{{ error() }}</div>
+}
+@if (success()) {
+  <div class="alert alert-success">{{ success() }}</div>
+}
+
+<div class="card">
+  <h3>{{ 'admin.enrollments.new' | translate }}</h3>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <div class="form-group">
+        <label>{{ 'common.student' | translate }}</label>
+        <select formControlName="studentId">
+          <option [value]="0" disabled>{{ 'admin.enrollments.selectStudent' | translate }}</option>
+          @for (s of students(); track s.id) {
+            <option [value]="s.id">{{ s.fullName }}</option>
+          }
+        </select>
+      </div>
+      <div class="form-group">
+        <label>{{ 'common.class' | translate }}</label>
+        <select formControlName="classId">
+          <option [value]="0" disabled>{{ 'admin.enrollments.selectClass' | translate }}</option>
+          @for (c of classes(); track c.id) {
+            <option [value]="c.id">{{ c.name }}</option>
+          }
+        </select>
+      </div>
+    </div>
+    <div class="actions">
+      <button type="submit" class="btn btn-primary" [disabled]="saving()">
+        {{ saving() ? ('common.saving' | translate) : ('common.enroll' | translate) }}
+      </button>
+      <button type="button" class="btn btn-secondary" (click)="searchByClass()">{{ 'admin.enrollments.viewClass' | translate }}</button>
+    </div>
+  </form>
+</div>
+
+<div class="card">
+  <div class="table-wrap">
+    @if (loading()) {
+      <div class="empty-state">{{ 'admin.enrollments.pickClass' | translate }}</div>
+    } @else if (enrollments().length === 0) {
+      <div class="empty-state">{{ 'admin.enrollments.empty' | translate }}</div>
+    } @else {
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>{{ 'common.student' | translate }}</th>
+            <th>{{ 'common.class' | translate }}</th>
+            <th>{{ 'common.enrollmentDate' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (e of enrollments(); track e.id) {
+            <tr>
+              <td>{{ e.id }}</td>
+              <td>{{ e.student?.fullName || e.studentId }}</td>
+              <td>{{ e.class?.name || e.classId }}</td>
+              <td>{{ e.enrollmentDate | date:'short' }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    }
+  </div>
+</div>

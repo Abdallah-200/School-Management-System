@@ -1,0 +1,33 @@
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-icon">🎓</span>
+      <div>
+        <h1>{{ 'app.brand' | translate }}</h1>
+        <p>{{ roleLabel() }}</p>
+      </div>
+    </div>
+
+    <app-language-switcher />
+
+    <nav class="nav">
+      @for (item of currentNav; track item.path) {
+        <a
+          [routerLink]="item.path"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: item.path.split('/').length <= 2 }"
+          class="nav-link"
+        >
+          <span class="nav-icon">{{ item.icon }}</span>
+          {{ item.labelKey | translate }}
+        </a>
+      }
+    </nav>
+
+    <button class="logout-btn" (click)="logout()">{{ 'common.logout' | translate }}</button>
+  </aside>
+
+  <main class="content">
+    <router-outlet />
+  </main>
+</div>

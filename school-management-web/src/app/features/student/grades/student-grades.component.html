@@ -1,0 +1,39 @@
+<div class="page-header">
+  <h2>{{ 'student.grades.title' | translate }}</h2>
+  <p>{{ 'student.grades.subtitle' | translate }}</p>
+</div>
+
+@if (error()) {
+  <div class="alert alert-error">{{ error() }}</div>
+}
+
+<div class="card">
+  <div class="table-wrap">
+    @if (loading()) {
+      <div class="empty-state">{{ 'common.loading' | translate }}</div>
+    } @else if (grades().length === 0) {
+      <div class="empty-state">{{ 'student.grades.empty' | translate }}</div>
+    } @else {
+      <table>
+        <thead>
+          <tr>
+            <th>{{ 'student.grades.assignment' | translate }}</th>
+            <th>{{ 'common.class' | translate }}</th>
+            <th>{{ 'common.grade' | translate }}</th>
+            <th>{{ 'common.date' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (g of grades(); track g.id) {
+            <tr>
+              <td>{{ g.assignment?.title || g.assignmentId }}</td>
+              <td>{{ g.class?.name || g.classId }}</td>
+              <td><strong>{{ g.score }}</strong></td>
+              <td>{{ g.createdAt | date:'shortDate' }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    }
+  </div>
+</div>

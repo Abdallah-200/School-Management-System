@@ -1,0 +1,99 @@
+<div class="page-header">
+  <h2>{{ 'teacher.submissions.title' | translate }}</h2>
+  <p>{{ 'teacher.submissions.subtitle' | translate }}</p>
+</div>
+
+@if (error()) {
+  <div class="alert alert-error">{{ error() }}</div>
+}
+@if (success()) {
+  <div class="alert alert-success">{{ success() }}</div>
+}
+
+<div class="card">
+  <div class="form-row">
+    <div class="form-group">
+      <label>{{ 'common.class' | translate }}</label>
+      <select (change)="onClassChange(+$any($event.target).value)">
+        <option [value]="0">{{ 'teacher.assignments.pickClass' | translate }}</option>
+        @for (c of classes(); track c.id) {
+          <option [value]="c.id">{{ c.name }}</option>
+        }
+      </select>
+    </div>
+    <div class="form-group">
+      <label>{{ 'teacher.submissions.selectAssignment' | translate }}</label>
+      <select (change)="loadSubmissions(+$any($event.target).value)">
+        <option [value]="0">{{ 'teacher.submissions.pickAssignment' | translate }}</option>
+        @for (a of assignments(); track a.id) {
+          <option [value]="a.id">{{ a.title }}</option>
+        }
+      </select>
+    </div>
+  </div>
+</div>
+
+@if (selectedAssignmentId()) {
+  <div class="card">
+    <div class="table-wrap">
+      @if (loading()) {
+        <div class="empty-state">{{ 'common.loading' | translate }}</div>
+      } @else if (submissions().length === 0) {
+        <div class="empty-state">{{ 'teacher.submissions.empty' | translate }}</div>
+      } @else {
+        <table>
+          <thead>
+            <tr>
+              <th>{{ 'common.student' | translate }}</th>
+              <th>{{ 'common.submittedDate' | translate }}</th>
+              <th>{{ 'common.file' | translate }}</th>
+              <th>{{ 'common.grade' | translate }}</th>
+              <th>{{ 'common.actions' | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (s of submissions(); track s.id) {
+              <tr>
+                <td>{{ s.student?.fullName || s.studentId }}</td>
+                <td>{{ s.submittedDate | date:'short' }}</td>
+                <td>
+                  @if (s.fileUrl) {
+                    <a [href]="s.fileUrl" target="_blank">{{ 'common.view' | translate }}</a>
+                  } @else {
+                    {{ 'common.none' | translate }}
+                  }
+                </td>
+                <td>{{ s.grade ?? ('common.none' | translate) }}</td>
+                <td>
+                  <button class="btn btn-primary btn-sm" (click)="startGrading(s.id, s.grade)">
+                    {{ 'common.gradeAction' | translate }}
+                  </button>
+                </td>
+              </tr>
+              @if (gradingSubmissionId() === s.id) {
+                <tr>
+                  <td colspan="5">
+                    <form [formGroup]="gradeForm" (ngSubmit)="submitGrade()" class="form-row">
+                      <div class="form-group">
+                        <label>{{ 'common.grade' | translate }}</label>
+                        <input formControlName="grade" type="number" min="0" max="100" />
+                      </div>
+                      <div class="form-group">
+                        <label>{{ 'common.remarks' | translate }}</label>
+                        <input formControlName="remarks" />
+                      </div>
+                      <div class="actions">
+                        <button type="submit" class="btn btn-primary btn-sm" [disabled]="grading()">{{ 'common.save' | translate }}</button>
+                        <button type="button" class="btn btn-secondary btn-sm" (click)="cancelGrading()">{{ 'common.cancel' | translate }}</button>
+                      </div>
+                    </form>
+                  </td>
+                </tr>
+              }
+            }
+          </tbody>
+        </table>
+      }
+    </div>
+  </div>
+}

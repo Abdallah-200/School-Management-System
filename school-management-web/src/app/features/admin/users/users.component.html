@@ -1,0 +1,82 @@
+<div class="page-header">
+  <h2>{{ 'admin.users.title' | translate }}</h2>
+  <p>{{ 'admin.users.subtitle' | translate }}</p>
+</div>
+
+@if (error()) {
+  <div class="alert alert-error">{{ error() }}</div>
+}
+
+<div class="actions" style="margin-bottom: 1rem">
+  <button class="btn btn-primary" (click)="toggleForm()">
+    {{ showForm() ? ('common.cancel' | translate) : ('admin.users.add' | translate) }}
+  </button>
+</div>
+
+@if (showForm()) {
+  <div class="card">
+    <h3>{{ 'admin.users.new' | translate }}</h3>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <div class="form-group">
+          <label>{{ 'common.name' | translate }}</label>
+          <input formControlName="name" />
+        </div>
+        <div class="form-group">
+          <label>{{ 'common.email' | translate }}</label>
+          <input formControlName="email" type="email" />
+        </div>
+        <div class="form-group">
+          <label>{{ 'common.password' | translate }}</label>
+          <input formControlName="password" type="password" />
+        </div>
+        <div class="form-group">
+          <label>{{ 'common.role' | translate }}</label>
+          <select formControlName="role">
+            @for (r of roles; track r) {
+              <option [value]="r">{{ ('roles.' + r) | translate }}</option>
+            }
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="saving()">
+        {{ saving() ? ('common.saving' | translate) : ('common.save' | translate) }}
+      </button>
+    </form>
+  </div>
+}
+
+<div class="card">
+  <div class="table-wrap">
+    @if (loading()) {
+      <div class="empty-state">{{ 'common.loading' | translate }}</div>
+    } @else if (users().length === 0) {
+      <div class="empty-state">{{ 'admin.users.empty' | translate }}</div>
+    } @else {
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>{{ 'common.name' | translate }}</th>
+            <th>{{ 'common.email' | translate }}</th>
+            <th>{{ 'common.role' | translate }}</th>
+            <th>{{ 'common.actions' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (user of users(); track user.id) {
+            <tr>
+              <td>{{ user.id }}</td>
+              <td>{{ user.fullName }}</td>
+              <td>{{ user.email }}</td>
+              <td>{{ ('roles.' + user.role) | translate }}</td>
+              <td>
+                <button class="btn btn-danger btn-sm" (click)="deleteUser(user.id)">{{ 'common.delete' | translate }}</button>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    }
+  </div>
+</div>

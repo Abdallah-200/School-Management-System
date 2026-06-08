@@ -1,0 +1,84 @@
+<div class="page-header">
+  <h2>{{ 'teacher.attendance.title' | translate }}</h2>
+  <p>{{ 'teacher.attendance.subtitle' | translate }}</p>
+</div>
+
+@if (error()) {
+  <div class="alert alert-error">{{ error() }}</div>
+}
+@if (success()) {
+  <div class="alert alert-success">{{ success() }}</div>
+}
+
+<div class="card">
+  <div class="form-group">
+    <label>{{ 'teacher.assignments.selectClass' | translate }}</label>
+    <select [value]="selectedClassId()" (change)="onClassChange(+$any($event.target).value)">
+      <option [value]="0">{{ 'teacher.assignments.pickClass' | translate }}</option>
+      @for (c of classes(); track c.id) {
+        <option [value]="c.id">{{ c.name }}</option>
+      }
+    </select>
+  </div>
+</div>
+
+@if (selectedClassId()) {
+  <div class="card">
+    <h3>{{ 'teacher.attendance.mark' | translate }}</h3>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <div class="form-group">
+          <label>{{ 'common.student' | translate }}</label>
+          <select formControlName="studentId">
+            <option [value]="0" disabled>{{ 'teacher.attendance.selectStudent' | translate }}</option>
+            @for (s of students(); track s.id) {
+              <option [value]="s.id">{{ s.name }}</option>
+            }
+          </select>
+        </div>
+        <div class="form-group">
+          <label>{{ 'common.date' | translate }}</label>
+          <input formControlName="date" type="date" />
+        </div>
+        <div class="form-group">
+          <label>{{ 'common.status' | translate }}</label>
+          <select formControlName="status">
+            @for (st of statuses; track st) {
+              <option [value]="st">{{ statusLabel(st) }}</option>
+            }
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="saving()">{{ 'teacher.attendance.mark' | translate }}</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <div class="table-wrap">
+      @if (loading()) {
+        <div class="empty-state">{{ 'common.loading' | translate }}</div>
+      } @else if (attendance().length === 0) {
+        <div class="empty-state">{{ 'teacher.attendance.empty' | translate }}</div>
+      } @else {
+        <table>
+          <thead>
+            <tr>
+              <th>{{ 'common.student' | translate }}</th>
+              <th>{{ 'common.date' | translate }}</th>
+              <th>{{ 'common.status' | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (a of attendance(); track a.id) {
+              <tr>
+                <td>{{ a.student?.fullName || a.studentId }}</td>
+                <td>{{ a.date | date:'shortDate' }}</td>
+                <td>{{ statusLabel(a.status) }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      }
+    </div>
+  </div>
+}

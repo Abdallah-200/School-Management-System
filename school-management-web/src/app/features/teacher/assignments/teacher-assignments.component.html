@@ -1,0 +1,80 @@
+<div class="page-header">
+  <h2>{{ 'teacher.assignments.title' | translate }}</h2>
+  <p>{{ 'teacher.assignments.subtitle' | translate }}</p>
+</div>
+
+@if (error()) {
+  <div class="alert alert-error">{{ error() }}</div>
+}
+
+<div class="card">
+  <div class="form-group">
+    <label>{{ 'teacher.assignments.selectClass' | translate }}</label>
+    <select [value]="selectedClassId()" (change)="onClassChange(+$any($event.target).value)">
+      <option [value]="0">{{ 'teacher.assignments.pickClass' | translate }}</option>
+      @for (c of classes(); track c.id) {
+        <option [value]="c.id">{{ c.name }}</option>
+      }
+    </select>
+  </div>
+</div>
+
+@if (selectedClassId()) {
+  <div class="actions" style="margin-bottom: 1rem">
+    <button class="btn btn-primary" (click)="toggleForm()">
+      {{ (showForm() ? 'common.cancel' : 'teacher.assignments.add') | translate }}
+    </button>
+  </div>
+
+  @if (showForm()) {
+    <div class="card">
+      <h3>{{ 'teacher.assignments.new' | translate }}</h3>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label>{{ 'common.title' | translate }}</label>
+          <input formControlName="title" />
+        </div>
+        <div class="form-group">
+          <label>{{ 'common.description' | translate }}</label>
+          <textarea formControlName="description"></textarea>
+        </div>
+        <div class="form-group">
+          <label>{{ 'common.dueDate' | translate }}</label>
+          <input formControlName="dueDate" type="datetime-local" />
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="saving()">{{ 'common.save' | translate }}</button>
+      </form>
+    </div>
+  }
+
+  <div class="card">
+    <div class="table-wrap">
+      @if (loading()) {
+        <div class="empty-state">{{ 'common.loading' | translate }}</div>
+      } @else if (assignments().length === 0) {
+        <div class="empty-state">{{ 'teacher.assignments.empty' | translate }}</div>
+      } @else {
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>{{ 'common.title' | translate }}</th>
+              <th>{{ 'common.description' | translate }}</th>
+              <th>{{ 'common.dueDate' | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (a of assignments(); track a.id) {
+              <tr>
+                <td>{{ a.id }}</td>
+                <td>{{ a.title }}</td>
+                <td>{{ a.description }}</td>
+                <td>{{ a.dueDate | date:'short' }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      }
+    </div>
+  </div>
+}

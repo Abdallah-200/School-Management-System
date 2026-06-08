@@ -1,0 +1,85 @@
+<div class="page-header">
+  <h2>{{ 'teacher.classes.title' | translate }}</h2>
+  <p>{{ 'teacher.classes.subtitle' | translate }}</p>
+</div>
+
+@if (error()) {
+  <div class="alert alert-error">{{ error() }}</div>
+}
+
+<div class="actions" style="margin-bottom: 1rem">
+  <button class="btn btn-primary" (click)="toggleForm()">
+    {{ (showForm() ? 'common.cancel' : 'teacher.classes.add') | translate }}
+  </button>
+</div>
+
+@if (showForm()) {
+  <div class="card">
+    <h3>{{ 'teacher.classes.new' | translate }}</h3>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <div class="form-group">
+          <label>{{ 'teacher.classes.className' | translate }}</label>
+          <input formControlName="name" />
+        </div>
+        <div class="form-group">
+          <label>{{ 'common.course' | translate }}</label>
+          <select formControlName="courseId">
+            <option [value]="0" disabled>{{ 'teacher.classes.selectCourse' | translate }}</option>
+            @for (c of courses(); track c.id) {
+              <option [value]="c.id">{{ c.name }} ({{ c.code }})</option>
+            }
+          </select>
+        </div>
+        <div class="form-group">
+          <label>{{ 'common.semester' | translate }}</label>
+          <input formControlName="semester" />
+        </div>
+        <div class="form-group">
+          <label>{{ 'common.startDate' | translate }}</label>
+          <input formControlName="startDate" type="date" />
+        </div>
+        <div class="form-group">
+          <label>{{ 'common.endDate' | translate }}</label>
+          <input formControlName="endDate" type="date" />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="saving()">{{ 'common.save' | translate }}</button>
+    </form>
+  </div>
+}
+
+<div class="card">
+  <div class="table-wrap">
+    @if (loading()) {
+      <div class="empty-state">{{ 'common.loading' | translate }}</div>
+    } @else if (classes().length === 0) {
+      <div class="empty-state">{{ 'teacher.classes.empty' | translate }}</div>
+    } @else {
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>{{ 'common.name' | translate }}</th>
+            <th>{{ 'common.course' | translate }}</th>
+            <th>{{ 'common.semester' | translate }}</th>
+            <th>{{ 'common.startDate' | translate }}</th>
+            <th>{{ 'common.endDate' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (cls of classes(); track cls.id) {
+            <tr>
+              <td>{{ cls.id }}</td>
+              <td>{{ cls.name }}</td>
+              <td>{{ cls.course?.name || cls.courseId }}</td>
+              <td>{{ cls.semester }}</td>
+              <td>{{ cls.startDate | date:'shortDate' }}</td>
+              <td>{{ cls.endDate | date:'shortDate' }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    }
+  </div>
+</div>

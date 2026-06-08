@@ -1,0 +1,42 @@
+<div class="page-header">
+  <h2>{{ 'admin.notifications.title' | translate }}</h2>
+  <p>{{ 'admin.notifications.subtitle' | translate }}</p>
+</div>
+
+@if (error()) {
+  <div class="alert alert-error">{{ error() }}</div>
+}
+@if (success()) {
+  <div class="alert alert-success">{{ success() }}</div>
+}
+
+<div class="card">
+  <h3>{{ 'admin.notifications.new' | translate }}</h3>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>{{ 'common.title' | translate }}</label>
+      <input formControlName="title" />
+    </div>
+    <div class="form-group">
+      <label>{{ 'common.message' | translate }}</label>
+      <textarea formControlName="message"></textarea>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>{{ 'admin.notifications.targetRole' | translate }}</label>
+        <select formControlName="recipientRole">
+          @for (r of roles; track r) {
+            <option [value]="r">{{ ('roles.' + r) | translate }}</option>
+          }
+        </select>
+      </div>
+      <div class="form-group">
+        <label>{{ 'admin.notifications.recipientId' | translate }}</label>
+        <input formControlName="recipientId" type="number" [placeholder]="'admin.notifications.recipientPlaceholder' | translate" />
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="saving()">
+      {{ saving() ? ('common.sending' | translate) : ('common.send' | translate) }}
+    </button>
+  </form>
+</div>

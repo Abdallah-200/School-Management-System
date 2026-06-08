@@ -1,0 +1,39 @@
+<div class="page-header">
+  <h2>{{ 'student.classes.title' | translate }}</h2>
+  <p>{{ 'student.classes.subtitle' | translate }}</p>
+</div>
+
+@if (error()) {
+  <div class="alert alert-error">{{ error() }}</div>
+}
+
+<div class="card">
+  <div class="table-wrap">
+    @if (loading()) {
+      <div class="empty-state">{{ 'common.loading' | translate }}</div>
+    } @else if (enrollments().length === 0) {
+      <div class="empty-state">{{ 'student.classes.empty' | translate }}</div>
+    } @else {
+      <table>
+        <thead>
+          <tr>
+            <th>{{ 'common.class' | translate }}</th>
+            <th>{{ 'common.course' | translate }}</th>
+            <th>{{ 'common.semester' | translate }}</th>
+            <th>{{ 'common.enrollmentDate' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (e of enrollments(); track e.id) {
+            <tr>
+              <td>{{ e.class?.name || e.classId }}</td>
+              <td>{{ e.class?.course?.name || ('common.none' | translate) }}</td>
+              <td>{{ e.class?.semester || ('common.none' | translate) }}</td>
+              <td>{{ e.enrollmentDate | date:'shortDate' }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    }
+  </div>
+</div>

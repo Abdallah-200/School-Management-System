@@ -1,0 +1,89 @@
+<div class="page-header">
+  <h2>{{ 'admin.courses.title' | translate }}</h2>
+  <p>{{ 'admin.courses.subtitle' | translate }}</p>
+</div>
+
+@if (error()) {
+  <div class="alert alert-error">{{ error() }}</div>
+}
+
+<div class="actions" style="margin-bottom: 1rem">
+  <button class="btn btn-primary" (click)="toggleForm()">
+    {{ showForm() ? ('common.cancel' | translate) : ('admin.courses.add' | translate) }}
+  </button>
+</div>
+
+@if (showForm()) {
+  <div class="card">
+    <h3>{{ 'admin.courses.new' | translate }}</h3>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <div class="form-group">
+          <label>{{ 'common.name' | translate }}</label>
+          <input formControlName="name" />
+        </div>
+        <div class="form-group">
+          <label>{{ 'common.code' | translate }}</label>
+          <input formControlName="code" />
+        </div>
+        <div class="form-group">
+          <label>{{ 'nav.departments' | translate }}</label>
+          <select formControlName="departmentId">
+            <option [value]="0" disabled>{{ 'admin.courses.selectDepartment' | translate }}</option>
+            @for (d of departments(); track d.id) {
+              <option [value]="d.id">{{ d.name }}</option>
+            }
+          </select>
+        </div>
+        <div class="form-group">
+          <label>{{ 'admin.courses.credits' | translate }}</label>
+          <input formControlName="credits" type="number" min="1" />
+        </div>
+        <div class="form-group">
+          <label>{{ 'common.description' | translate }}</label>
+          <input formControlName="description" />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="saving()">
+        {{ saving() ? ('common.saving' | translate) : ('common.save' | translate) }}
+      </button>
+    </form>
+  </div>
+}
+
+<div class="card">
+  <div class="table-wrap">
+    @if (loading()) {
+      <div class="empty-state">{{ 'common.loading' | translate }}</div>
+    } @else if (courses().length === 0) {
+      <div class="empty-state">{{ 'admin.courses.empty' | translate }}</div>
+    } @else {
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>{{ 'common.name' | translate }}</th>
+            <th>{{ 'common.code' | translate }}</th>
+            <th>{{ 'nav.departments' | translate }}</th>
+            <th>{{ 'admin.courses.credits' | translate }}</th>
+            <th>{{ 'common.actions' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (course of courses(); track course.id) {
+            <tr>
+              <td>{{ course.id }}</td>
+              <td>{{ course.name }}</td>
+              <td>{{ course.code }}</td>
+              <td>{{ getDepartmentName(course.departmentId) }}</td>
+              <td>{{ course.credits }}</td>
+              <td>
+                <button class="btn btn-danger btn-sm" (click)="deleteCourse(course.id)">{{ 'common.delete' | translate }}</button>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    }
+  </div>
+</div>

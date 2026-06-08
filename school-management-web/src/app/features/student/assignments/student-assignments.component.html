@@ -1,0 +1,52 @@
+<div class="page-header">
+  <h2>{{ 'student.assignments.title' | translate }}</h2>
+  <p>{{ 'student.assignments.subtitle' | translate }}</p>
+</div>
+
+@if (error()) {
+  <div class="alert alert-error">{{ error() }}</div>
+}
+@if (success()) {
+  <div class="alert alert-success">{{ success() }}</div>
+}
+
+<div class="card">
+  <div class="table-wrap">
+    @if (loading()) {
+      <div class="empty-state">{{ 'common.loading' | translate }}</div>
+    } @else if (assignments().length === 0) {
+      <div class="empty-state">{{ 'student.assignments.empty' | translate }}</div>
+    } @else {
+      <table>
+        <thead>
+          <tr>
+            <th>{{ 'common.title' | translate }}</th>
+            <th>{{ 'common.description' | translate }}</th>
+            <th>{{ 'common.dueDate' | translate }}</th>
+            <th>{{ 'nav.submissions' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (a of assignments(); track a.id) {
+            <tr>
+              <td>{{ a.title }}</td>
+              <td>{{ a.description }}</td>
+              <td>{{ a.dueDate | date:'short' }}</td>
+              <td>
+                <label class="btn btn-primary btn-sm upload-btn">
+                  {{ (uploading() === a.id ? 'common.uploading' : 'common.uploadFile') | translate }}
+                  <input
+                    type="file"
+                    hidden
+                    [disabled]="uploading() === a.id"
+                    (change)="onFileSelected(a.id, $event)"
+                  />
+                </label>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    }
+  </div>
+</div>
